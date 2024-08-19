@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Over Background</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Background Image -->
+  <div class="relative">
+    <img src="https://via.placeholder.com/1500x800" alt="Background Image" class="w-full h-screen object-cover">
+    
+    <!-- Fixed Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-75 text-white shadow-md z-50">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="text-lg font-bold">Logo</div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="hover:text-gray-400">Home</a>
+          <a href="#" class="hover:text-gray-400">About</a>
+          <a href="#" class="hover:text-gray-400">Services</a>
+          <a href="#" class="hover:text-gray-400">Contact</a>
+        </div>
+
+        <!-- Burger Menu (for mobile) -->
+        <button class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="absolute top-0 left-0 w-full h-screen flex items-center justify-center">
+      <div class="text-white text-center">
+        <h1 class="text-5xl font-bold mb-4">Welcome to Our Website</h1>
+        <p class="text-lg">Overlay content goes here. The navbar is fixed on top.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Content -->
+  <div class="bg-white p-6">
+    <div class="max-w-7xl mx-auto py-12">
+      <h2 class="text-2xl font-bold mb-4">Additional Content</h2>
+      <p>More content that follows the initial background section.</p>
+    </div>
+  </div>
+
+</body>
+</html>

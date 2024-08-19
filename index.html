@@ -5,9 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="./static/favicon.ico">
 	<script src="https://cdn.tailwindcss.com"></script>
-	<!-- Include Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Inline Tailwind Configuration for Example -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   </style>
@@ -25,7 +23,7 @@
 	<title>icitrus</title>
 </head>
 <body class="font-roboto bg-[#F2F2F2]">
-	<nav class="fixed w-full top-0 left-0 min-h-1  bg-gradient-to-r from-[#1E4023] to-[#BABF24]">
+	<nav class="fixed w-full top-0 left-0 min-h-1  bg-gradient-to-r from-[#1E4023] to-[#BABF24] z-50">
 		<div class="max-w-7xl mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="justify-center">
@@ -50,7 +48,7 @@
       <div class="hidden lg:flex space-x-8 text-white">
       	<a href="#" class="block">Home</a>
       	<a href="#" class="block">Español</a>
-      	<a href="#" class="block">Ingles</a>
+      	<a href="#" class="block">English</a>
       </div>
     </div>
   
@@ -58,19 +56,17 @@
     <div id="mobile-menu" class="hidden lg:hidden mt-4 space-y-4 text-white">
       <a href="#" class="block">Home</a>
       <a href="#" class="block">Español</a>
-      <a href="#" class="block">Ingles</a>
+      <a href="#" class="block">English</a>
     </div>
-	</nav>
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-	<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
+		</nav>
+		<main class="bg-[url('./static/background.jpeg')]">
+			<div class="bg-black/60">
+			<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
+			<div>
+				<span>Bienvenido a iCITRUS, donde la frescura es nuestra cosecha diaria</span>
+			</div>
+			</div>
+		</main>
 	</body>
 	<script>
     const burgerButton = document.getElementById('burger-button');
