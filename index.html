@@ -5,17 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="./static/favicon.ico">
 	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Include Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Inline Tailwind Configuration for Example -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
 	<title>icitrus</title>
 </head>
-<body>
+<body class="font-roboto bg-[#F2F2F2]">
 	<nav class="bg-gradient-to-r from-[#1E4023] to-[#BABF24]">
-		<!-- <div class="flex justify-center lg:justify-start">
-			<img src="./static/1noBackground.png" alt="icitrus logo" class="max-w-16">
-		</div> -->
 		<div class="max-w-7xl mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="justify-center">
-			<img src="./static/1noBackground.png" alt="icitrus logo" class="max-w-16">
+				<img src="./static/1.png" alt="icitrus logo" class="max-w-16">
       </div>
   
       <!-- Burger Menu Icon (visible on mobile) -->
