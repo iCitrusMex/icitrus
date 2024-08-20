@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="./static/favicon.ico">
 	<script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   </style>
@@ -15,6 +15,7 @@
         extend: {
           fontFamily: {
             roboto: ['Roboto', 'sans-serif'],
+            aboreto: ['Aboreto', 'cursive'],
           },
         },
       },
@@ -22,7 +23,8 @@
   </script>
 	<title>icitrus</title>
 </head>
-<body class="font-roboto bg-[#F2F2F2]">
+<!-- <body class="font-roboto bg-[#F2F2F2]"> -->
+<body class="font-roboto bg-black/60 bg-[url('./static/background.jpeg')] bg-center bg-cover">
 	<nav class="fixed w-full top-0 left-0 min-h-1  bg-gradient-to-r from-[#1E4023] to-[#BABF24] z-50">
 		<div class="max-w-7xl mx-auto flex justify-between items-center">
       <!-- Logo -->
@@ -58,13 +60,13 @@
       <a href="#" class="block">Español</a>
       <a href="#" class="block">English</a>
     </div>
+  </div>
 		</nav>
-		<main class="bg-[url('./static/background.jpeg')]">
-			<div class="bg-black/60">
+		<main class="min-h-screen bg-black/60">
 			<img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
-			<div>
-				<span>Bienvenido a iCITRUS, donde la frescura es nuestra cosecha diaria</span>
-			</div>
+			<div class="bg-white max-w-4xl mx-auto md:rounded">
+				<h2 class="font-aboreto p-4 text-xl font-bold text-center ">La frescura es nuestra cosecha diaria</h2>
+        <p class="text-gray-600 p-4">Nos dedicamos a cultivar los cítricos más frescos y de la más alta calidad, desde el vibrante limón hasta la jugosa mandarina y la refrescante toronja. Nuestra huerta, situada en el corazón de la naturaleza, combina tradición y tecnología para ofrecerte productos que destacan por su sabor auténtico y frescura insuperable.</p>
 			</div>
 		</main>
 	</body>
