@@ -10,7 +10,7 @@
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="iCitrus">
   <meta property="og:description" content="Pagina oficial de iCitrus. La frescura es nuestra cosesha diaria">
-  <meta property="og:image" content="/static/1.png">
+  <meta property="og:image" content="https://icitrus.com.mx/static/1.png">
   <meta property="og:url" content="https://icitrus.com.mx">
   <meta property="og:type" content="website">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,16 +62,18 @@
       <!-- Menu Items (visible on larger screens) -->
       <div class="hidden lg:flex space-x-8 text-white">
         <a href="#" class="block">Home</a>
-        <a href="#" class="block">Español</a>
-        <a href="#" class="block">English</a>
+        <button class="block hidden" onclick="sendAlert()">
+          <p>Español</p>
+          <p id="ingles" class="hidden">English</p>
+        </button>
       </div>
     </div>
 
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="hidden lg:hidden mt-4 space-y-4 text-white">
       <a href="#" class="block">Home</a>
-      <a href="#" class="block">Español</a>
-      <a href="#" class="block">English</a>
+      <a href="#" class="block hidden">Español</a>
+      <a href="#" class="block hidden">English</a>
     </div>
     </div>
   </nav>
@@ -84,6 +86,10 @@
         vibrante limón hasta la jugosa mandarina y la refrescante toronja. Nuestra huerta, situada en el corazón de la
         naturaleza, combina tradición y tecnología para ofrecerte productos que destacan por su sabor auténtico y
         frescura insuperable.</p>
+      <p class="text-gray-600 p-4 hidden">We are dedicated to growing the freshest, highest quality citrus fruits, from the
+        vibrant lemon to juicy tangerine and refreshing grapefruit. Our orchard, located in the heart of the
+        nature, combines tradition and technology to offer you products that stand out for their authentic flavor and
+        unsurpassed freshness.</p>
     </div>
     <!-- second image and text talking about quality -->
     <div class="md:flex  mt-40  bg-white max-w-4xl mx-auto md:rounded-lg">
@@ -183,6 +189,11 @@
   burgerButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+
+  function sendAlert(){
+    const boton = document.getElementById('ingles')
+    boton.classList.toggle('hidden')
+  }
 </script>
 
 </html>
