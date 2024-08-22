@@ -6,32 +6,35 @@
     <title>Contact Information Card</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg flex hover:bg-gray-200 transition-transform transition-colors duration-300 ease-in-out">
-        <!-- Text and Contact Info on the Left -->
-        <div class="w-2/3 p-6">
-            <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
-            <ul class="space-y-4">
-                <li class="flex items-center">
-                    <!-- Mail Icon -->
-                    <svg class="w-6 h-6 text-blue-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0H8m8-8H8m0 0a4 4 0 100 8h8a4 4 0 100-8z"></path></svg>
-                    <span>contact@example.com</span>
-                </li>
-                <li class="flex items-center">
-                    <!-- Phone Icon -->
-                    <svg class="w-6 h-6 text-blue-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10v6a2 2 0 002 2h14a2 2 0 002-2v-6M3 10l7 4.5m0-9L3 10m7 4.5l7-4.5m0 9L10 14.5"></path></svg>
-                    <span>(123) 456-7890</span>
-                </li>
-                <li class="flex items-center">
-                    <!-- Location Icon -->
-                    <svg class="w-6 h-6 text-blue-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.14 15.39A8 8 0 106.5 9.87l.7-.7a8.007 8.007 0 109.08 6.22z"></path></svg>
-                    <span>123 Example St, City, Country</span>
-                </li>
-            </ul>
+ <body>
+    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="grid grid-cols-3 gap-1 p-2">
+            <!-- Image 1 -->
+            <div class="col-span-3 row-span-2">
+                <img src="https://via.placeholder.com/300" alt="Image 1" class="w-full h-full object-cover">
+            </div>
+            <!-- Image 2 -->
+            <div>
+                <img src="https://via.placeholder.com/100" alt="Image 2" class="w-full h-full object-cover">
+            </div>
+            <!-- Image 3 -->
+            <div>
+                <img src="https://via.placeholder.com/100" alt="Image 3" class="w-full h-full object-cover">
+            </div>
+            <!-- Image 4 -->
+            <div>
+                <img src="https://via.placeholder.com/100" alt="Image 4" class="w-full h-full object-cover">
+            </div>
+            <!-- Image 5 -->
+            <!-- <div>
+                <img src="https://via.placeholder.com/100" alt="Image 5" class="w-full h-full object-cover">
+            </div> -->
         </div>
-
-        <!-- Image on the Right -->
-        <img src="https://via.placeholder.com/300" alt="Contact" class="w-1/3 rounded-r-lg object-cover">
+        <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Photo Gallery</h2>
+            <p class="text-gray-600 mt-2">A collection of beautiful images displayed in a compact, grid-style layout.</p>
+        </div>
     </div>
+    
 </body>
 </html>
