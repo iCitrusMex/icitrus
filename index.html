@@ -61,9 +61,9 @@
       <!-- Menu Items (visible on larger screens) -->
       <div class="hidden lg:flex space-x-8 text-white">
         <a href="#" class="block">Home</a>
-        <button class="block hidden" onclick="sendAlert()">
-          <p>Español</p>
-          <p id="ingles" class="hidden">English</p>
+        <button class="block" onclick="toggleLanguage()">
+          <p>English</p>
+          <p class="hidden">Español</p>
         </button>
       </div>
     </div>
@@ -71,8 +71,10 @@
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="hidden lg:hidden mt-4 space-y-4 text-white">
       <a href="#" class="block">Home</a>
-      <a href="#" class="block hidden">Español</a>
-      <a href="#" class="block hidden">English</a>
+      <button class="block" onclick="toggleLanguage()">
+          <p>English</p>
+          <p class="hidden">Español</p>
+      </button>
     </div>
     </div>
   </nav>
@@ -80,21 +82,35 @@
     <!-- logo and first text -->
     <img src="./static/3.png" alt="icitrus logo" class="mt-6 mx-auto w-full max-w-md">
     <div class="bg-white max-w-4xl mx-auto md:rounded-lg">
+      <!-- content in spanish -->
       <h2 class="font-aboreto p-4 text-xl font-bold text-center ">La frescura es nuestra cosecha diaria</h2>
       <p class="text-gray-600 p-4">Nos dedicamos a cultivar los cítricos más frescos y de la más alta calidad, desde el
         vibrante limón hasta la jugosa mandarina y la refrescante toronja. Nuestra huerta, situada en el corazón de la
         naturaleza, combina tradición y tecnología para ofrecerte productos que destacan por su sabor auténtico y
         frescura insuperable.</p>
+      <!-- content in English -->
+      <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden">Freshness is our daily harvest</h2>
+      <p class="text-gray-600 p-4 hidden">We are dedicated to growing the freshest, highest quality citrus fruits, from the
+        vibrant lemon to juicy tangerine and refreshing grapefruit. Our orchard, located in the heart of the
+        nature, combines tradition and technology to offer you products that stand out for their authentic flavor and
+        unsurpassed freshness.</p>
     </div>
     <!-- second image and text talking about quality -->
     <div class="md:flex  mt-40  bg-white max-w-4xl mx-auto md:rounded-lg">
       <img src="/static/limeInPlant.jpg" alt="lemon image" class="w-full object-cover mx-auto md:rounded-l-lg md:w-1/3">
       <div class="md:w-2/3 p-4">
+      <!-- content in spanish -->
         <h2 class="font-aboreto p-4 text-xl font-bold text-center ">La más alta calidad</h2>
         <p class="text-gray-600 p-4">Cada fruta que sale de nuestras tierras es el resultado de un cuidadoso proceso que
           respeta tanto el medio ambiente como las manos que la cultivan. Desde la selección de la mejor semilla hasta
           la cosecha en su punto óptimo, nos aseguramos de que cada limón, mandarina y toronja que llega a tu mesa sea
           una experiencia de sabor única.</p>
+      <!-- content in English -->
+        <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden ">The highest quality</h2>
+        <p class="text-gray-600 p-4 hidden">Each fruit that leaves our lands is the result of a careful process that
+          It respects both the environment and the hands that grow it. From selecting the best seed to
+          the harvest at its optimal point, we make sure that every lemon, tangerine and grapefruit that reaches your table is
+          a unique flavor experience.</p>
       </div>
     </div>
     <!-- type of fruits -->
@@ -103,35 +119,54 @@
       <div class="bg-white max-w-4xl mx-auto md:rounded-lg md:w-1/3">
         <img src="/static/limones.jpg" alt="lemon image" class="w-full max-h-64 object-cover mx-auto md:rounded-t-lg ">
         <div class="p-4">
+      <!-- content in spanish -->
           <h2 class="font-aboreto p-4 text-xl font-bold text-center ">Limón</h2>
           <p class="text-gray-600 p-4 text-center">La esencia del frescor en cada gota, perfecto para realzar tus
             bebidas y recetas con su sabor cítrico y vibrante.</p>
+      <!-- content in English -->
+          <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden ">Lemon</h2>
+          <p class="text-gray-600 p-4 text-center hidden">The essence of freshness in every drop, perfect to enhance your
+            drinks and recipes with its citrus and vibrant flavor.</p>
         </div>
       </div>
       <!-- tangerine -->
       <div class="bg-white max-w-4xl md:mx-3 md:rounded-lg md:w-1/3">
-        <img src="/static/mandarinas.jpg" alt="lemon image" class="w-full max-h-64 object-cover mx-auto md:rounded-t-lg ">
+        <img src="/static/mandarinas.jpg" alt="tangerine image" class="w-full max-h-64 object-cover mx-auto md:rounded-t-lg ">
         <div class="p-4">
+      <!-- content in spanish -->
           <h2 class="font-aboreto p-4 text-xl font-bold text-center ">Mandarina</h2>
           <p class="text-gray-600 p-4 text-center">Un estallido de dulzura y jugosidad, ideal para disfrutar como snack
             saludable o para añadir un toque especial a tus platos.</p>
+      <!-- content in English -->
+          <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden ">Tangerine</h2>
+          <p class="text-gray-600 p-4 text-center hidden">A burst of sweetness and juiciness, ideal to enjoy as a snack
+            healthy or to add a special touch to your dishes.</p>
         </div>
       </div>
       <!-- pink grapefruit -->
       <div class="bg-white max-w-4xl md:rounded-lg md:w-1/3">
-        <img src="/static/toronja.jpg" alt="lemon image" class="w-full max-h-64 object-cover mx-auto md:rounded-t-lg">
+        <img src="/static/toronja.jpg" alt="pink grapefruit image" class="w-full max-h-64 object-cover mx-auto md:rounded-t-lg">
         <div class="p-4">
+      <!-- content in spanish -->
           <h2 class="font-aboreto p-4 text-xl font-bold text-center ">Toronja</h2>
           <p class="text-gray-600 p-4 text-center">Refrescante y ligeramente amarga, es el equilibrio perfecto entre
             sabor y salud, excelente para un desayuno lleno de energía.</p>
+      <!-- content in English -->
+          <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden">Pink grapefruit</h2>
+          <p class="text-gray-600 p-4 text-center hidden">Refreshing and slightly bitter, it is the perfect balance between
+            flavor and health, excellent for a breakfast full of energy.</p>
         </div>
       </div>
     </div>
     <!-- history part 1 -->
     <div class="md:flex  mt-40  bg-white max-w-4xl mx-auto md:rounded-lg">
       <div class="md:w-2/3 p-4">
+      <!-- content in spanish -->
         <h2 class="font-aboreto p-4 text-xl font-bold text-center ">Nuestra Historia</h2>
         <p class="text-gray-600 p-4">iCitrus nace en 1999 con la inquietud de un amante de la naturaleza, el bienestar de la salud y con ancestros relacionados con actividades agrícolas adquiriendo tierras dedicadas a la siembra de caña de azúcar en el pueblo  de Ticuman, Morelos  un bello pueblo ubicado aproximadamente a  130 kms de la ciudad de México;  con aproximadamente 20 acres continua hasta 2002 con la siembra de caña y es  cuando se une al proyecto un socio que ademas de capital de trabajo suma 15 acres de tierra y ambos visualizando el potencial de la tierra, el clima y el fácil acceso a fuentes freáticas ademas del riego por canal del propio del ejido  inician juntos el proyecto de la  produccion de papaya Maradol una variedad de semilla cubana altamente productiva y fácilmente adaptable a la region la cual la comercializan en restaurantes de la ciudad de México.</p>
+      <!-- content in English -->
+        <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden">Our History</h2>
+        <p class="text-gray-600 p-4 hidden">iCitrus was born in 1999 with the concern of a lover of nature, health well-being and with ancestors related to agricultural activities, acquiring land dedicated to planting sugar cane in the town of Ticuman, Morelos, a beautiful town located approximately 130 meters away. kms from Mexico City;  With approximately 20 acres, it continued until 2002 with the planting of cane and that is when a partner joined the project who, in addition to working capital, added 15 acres of land and both visualized the potential of the land, the climate and easy access to phreatic sources. In addition to irrigation through the ejido's own canal, they began together the project of producing Maradol papaya, a highly productive variety of Cuban seed that is easily adaptable to the region, which they market in restaurants in Mexico City.</p>
       </div>
       <img src="/static/jorge2.jpeg" alt="lemon image" class="w-full mx-auto max-h-64 md:max-h-full  md:rounded-r-lg md:w-1/3 object-cover ">
     </div>
@@ -139,15 +174,23 @@
     <div class="md:flex  mt-40  bg-white max-w-4xl mx-auto md:rounded-lg">
       <img src="/static/jorge1.jpeg" alt="lemon image" class="w-full mx-auto max-h-64 md:max-h-full  md:rounded-l-lg md:w-1/3 object-cover ">
       <div class="md:w-2/3 p-4">
+      <!-- content in spanish -->
         <h2 class="font-aboreto p-4 text-xl font-bold text-center ">la siembra de Citricos</h2>
         <p class="text-gray-600 p-4">En 2005 una plaga acaba con casi el 70% de la planta de papaya por lo que deciden buscar un producto menos demandante en cuidados e inician la siembra de limón mexicano o criollo pero para 2008  el socio por motivos de salud vende su parte al fundador y es como éste decide ampliar la variedad de cítricos a limón Persa, limón Tavares o llamada “tequilero”, mandarina Clementina, Reina, toronja y naranja agria, para entonces el canal de distribucion principal seguía siendo el de restaurantes con algo de distribucion a las  Centrales  de Abastos de Cuautla y Mexico.</p>
+      <!-- content in English -->
+        <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden">Citrus planting</h2>
+        <p class="text-gray-600 p-4 hidden">In 2005, a plague destroyed almost 70% of the papaya plant, so they decided to look for a product that was less demanding in care and began planting Mexican or Creole lemons, but by 2008, for health reasons, the partner sold his share to the founder and This is how he decided to expand the variety of citrus fruits to Persian lemon, Tavares lemon or called “tequilero”, Clementine mandarin, Queen, grapefruit and sour orange, by then the main distribution channel was still that of restaurants with some distribution to the Centrals of Abastos de Cuautla and Mexico.</p>
       </div>
     </div>
     <!-- objectives  -->
     <div class="md:flex  mt-40 bg-white max-w-4xl mx-auto md:rounded-lg">
       <div class="md:w-2/3 p-4">
+      <!-- content in spanish -->
         <h2 class="font-aboreto p-4 text-xl font-bold text-center ">Nuestro Objetivo</h2>
         <p class="text-gray-600 p-4">En iCitrus, creemos que cada cítrico tiene una historia que contar. Una historia de tradición, sostenibilidad y pasión por lo natural. Estamos orgullosos de ser tu fuente confiable de cítricos frescos y esperamos que disfrutes de nuestros productos tanto como nosotros disfrutamos cultivándolos para ti.</p>
+      <!-- content in English -->
+        <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden">Our Objective</h2>
+        <p class="text-gray-600 p-4 hidden">At iCitrus, we believe that every citrus fruit has a story to tell. A story of tradition, sustainability and passion for nature. We are proud to be your trusted source for fresh citrus and hope you enjoy our products as much as we enjoy growing them for you.</p>
       </div>
       <img src="/static/envioLimones.jpeg" alt="lemon image" class="w-full mx-auto max-h-64 md:max-h-64 md:rounded-r-lg md:w-1/3 object-cover ">
     </div>
@@ -172,15 +215,22 @@
             </div>
         </div>
         <div class="p-4">
+      <!-- content in spanish -->
             <h2 class="font-aboreto text-xl font-semibold text-gray-800">citrus & specialty crop expo 2024</h2>
             <p class="text-gray-600 p-4">En iCitrus, nos enorgullece haber sido invitados a participar en la prestigiosa Citrus Expo 2024 en Florida, uno de los eventos más importantes del sector agrícola a nivel mundial. Nuestra participación en esta gran exposición es un reflejo del compromiso y la dedicación que ponemos en ofrecer productos y soluciones innovadoras para la industria cítrica.</p>
+      <!-- content in English -->
+            <h2 class="font-aboreto text-xl font-semibold text-gray-800 hidden">citrus & specialty crop expo 2024</h2>
+            <p class="text-gray-600 p-4 hidden">At iCitrus, we are proud to have been invited to participate in the prestigious Citrus Expo 2024 in Florida, one of the most important events in the agricultural sector worldwide. Our participation in this great exhibition is a reflection of the commitment and dedication we put into offering innovative products and solutions for the citrus industry.</p>
         </div>
     </div>
     <!-- contact -->
     <div class="md:flex  mt-40 bg-white max-w-4xl mx-auto md:rounded-lg">
       <img src="/static/loneLemon.jpeg" alt="lemon image" class="w-full mx-auto max-h-64 md:max-h-64 md:rounded-l-lg md:w-1/3 object-cover ">
       <div class="md:w-2/3 p-4 ">
+        <!-- spanish -->
         <h2 class="font-aboreto p-4 text-xl font-bold text-center ">Contacto</h2>
+        <!-- English -->
+        <h2 class="font-aboreto p-4 text-xl font-bold text-center hidden">Contact</h2>
         <ul class="space-y-2 text-gray-600">
           <li class="text-center">
             <span>(52)5585-918735</span>
@@ -200,7 +250,10 @@
   </main>
   <!-- footer  -->
   <footer class="bg-[#1E4023] min-h-16 flex items-center justify-center">
+    <!-- Spanish -->
     <h2 class="font-aboreto text-white text-center">¡iCITRUS - Cosechando frescura, compartiendo calidad, PURE FRESHNESS!</h2>
+    <!-- English -->
+    <h2 class="font-aboreto text-white text-center hidden">iCITRUS - Harvesting freshness, sharing quality, PURE FRESHNESS!</h2>
   </footer>
 </body>
 <script>
@@ -211,9 +264,10 @@
     mobileMenu.classList.toggle('hidden');
   });
 
-  function sendAlert(){
-    const boton = document.getElementById('ingles')
-    boton.classList.toggle('hidden')
+  function toggleLanguage(){
+    document.querySelectorAll('h2,p').forEach(element =>{
+      element.classList.toggle('hidden');
+    })
   }
 </script>
 
