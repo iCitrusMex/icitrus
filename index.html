@@ -16,27 +16,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="canonical" href="https://icitrus.com.mx">
   <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./src/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   </style>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            roboto: ['Roboto', 'sans-serif'],
-            aboreto: ['Aboreto', 'cursive'],
-          },
-        },
-      },
-    }
-  </script>
   <title>iCitrus</title>
 </head>
-<body class="font-roboto bg-black/60 bg-[url('./static/background.jpeg')] bg-fixed bg-center bg-cover">
+<body style="background-image: url('./static/background.jpeg')" class="font-roboto bg-black/60 bg-fixed bg-center bg-cover">
   <!-- navbar -->
   <nav class="fixed w-full top-0 left-0 min-h-1  bg-gradient-to-r from-[#1E4023] to-[#BABF24] z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
